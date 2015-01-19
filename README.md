@@ -14,16 +14,24 @@ You have two options with which to create the file:
 
 ## YAML front matter
 
-Jekyll knows how to build your blog post via the YAML front matter that preceeds your entry. Your YAML front matter should follow this pattern exactly: 
+Jekyll knows how to build your blog post via the YAML front matter that preceeds your entry. Your YAML front matter should follow this pattern: 
 ```
 ---
 layout: blogpost
-title: Anything (This will become the title of your blog post and auto-populate as an h2 at the top of your blog)
-date: YEAR-MONTH-DAY HR:MIN (this sets the timestamp that displays with the blog post and in lists)
-author: Your Name (this is not yet hooked up to an auto-generating author block, but it will be eventually)
-tags: whatever (we haven't yet formalized a taxonomy, but should. otherwise, tags are separated by spaces)
-excerpt: This is an excerpt that will display with every list of blog posts. Make it relatively lengthy and grabby. If this is left off, the first paragraph of your post will automatically be put in its place in lists.
+title: 2015 Fellowship Onboarding is GO
+date: 2015-1-12 9:00
+author: Dan Sinker
+tags: fellowship announcements
+excerpt: The OpenNews team brings our 2015 Knight-Mozilla Fellows to Los Angeles to start the work of their fellowship years. We also welcome Kavya Sukumar as our seventh 2015 fellow, who will spend her fellowship year working with Vox Media. Yay fellows! Yay Los Angeles!
 ---
 ```
+
+* *layout*: this needs to be 'blogpost'
+* *title*: this can be anything, and will automatically become the title of your blog post both on the post page and in all listings of the blog (front page, blog page, etc)
+* *date*: this needs to follow the pattern of: YEAR-MONTH-DAY HR:MIN and sets the timestamp that displays with the blog post and in lists
+* *author*: your name.this is not yet hooked up to an auto-generating author block, but it will be eventually)
+* *tags*: whatever (we haven't yet formalized a taxonomy, but should. otherwise, tags are separated by spaces)
+* *excerpt*: This is an excerpt that will display with every list of blog posts. Make it relatively lengthy and grabby. If this is left off, the first paragraph of your post will automatically be put in its place in lists.
+
 
 ## Publishing
