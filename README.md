@@ -26,12 +26,13 @@ excerpt: The OpenNews team brings our 2015 Knight-Mozilla Fellows to Los Angeles
 ---
 ```
 
-* *layout*: this needs to be 'blogpost'
-* *title*: this can be anything, and will automatically become the title of your blog post both on the post page and in all listings of the blog (front page, blog page, etc)
-* *date*: this needs to follow the pattern of: YEAR-MONTH-DAY HR:MIN and sets the timestamp that displays with the blog post and in lists
-* *author*: your name.this is not yet hooked up to an auto-generating author block, but it will be eventually)
-* *tags*: whatever (we haven't yet formalized a taxonomy, but should. otherwise, tags are separated by spaces)
-* *excerpt*: This is an excerpt that will display with every list of blog posts. Make it relatively lengthy and grabby. If this is left off, the first paragraph of your post will automatically be put in its place in lists.
+* **layout**: this needs to be 'blogpost'
+* **title**: this can be anything, and will automatically become the title of your blog post both on the post page and in all listings of the blog (front page, blog page, etc)
+* **date**: this needs to follow the pattern of: YEAR-MONTH-DAY HR:MIN and sets the timestamp that displays with the blog post and in lists
+* **author**: your name.this is not yet hooked up to an auto-generating author block, but it will be eventually)
+* **tags**: whatever (we haven't yet formalized a taxonomy, but should. otherwise, tags are separated by spaces)
+* **excerpt**: This is an excerpt that will display with every list of blog posts. Make it relatively lengthy and grabby. If this is left off, the first paragraph of your post will automatically be put in its place in lists.
 
+Also, note that this whole thing needs to be both preceeded and followed by three hyphens.
 
 ## Publishing
