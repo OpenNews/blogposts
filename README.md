@@ -14,6 +14,16 @@ You have two options with which to create the file:
 
 ## YAML front matter
 
-Jekyll knows how to build your blog post via the YAML front matter that preceeds your entry. 
+Jekyll knows how to build your blog post via the YAML front matter that preceeds your entry. Your YAML front matter should follow this pattern exactly: 
+```
+---
+layout: blogpost
+title: Anything (This will become the title of your blog post and auto-populate as an h2 at the top of your blog)
+date: YEAR-MONTH-DAY HR:MIN (this sets the timestamp that displays with the blog post and in lists)
+author: Your Name (this is not yet hooked up to an auto-generating author block, but it will be eventually)
+tags: whatever (we haven't yet formalized a taxonomy, but should. otherwise, tags are separated by spaces)
+excerpt: This is an excerpt that will display with every list of blog posts. Make it relatively lengthy and grabby. If this is left off, the first paragraph of your post will automatically be put in its place in lists.
+---
+```
 
 ## Publishing
