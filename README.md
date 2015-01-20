@@ -46,16 +46,21 @@ If you want to include images in your posts you have a a couple workable options
 There's no real reason **not** to put images into `/media/img/` unless you really don't want to deal with `git add --all` and committing. But you're going to be doing that anyway, so really, nbd.
 
 ## Publishing
+Getting your blog entry from your local `_posts` folder to opennews.org follows the same workflow as pushing any other change to the site does.
 
 ### Pushing your blog entry to master
-This is where things get ever-so-slightly tricky. A few things to keep in mind:
+First, you need to get your entry to master.
 
 * Jekyll needs to render items from `_posts` into actual HTML pages that will end up in `_site/blog` as a result you MUST run `jekyll serve` from the command line prior to committing and submitting a pull request.
 * Prior to running `git commit` you will need to remember to do `git add --all`, or your blog post and the corresponding HTML page will not be committed when you send everything over to github.
 * Once you've checked that everything looks good push your branch and then submitt a pull request to `mozilla/mozilla-opennews master`
 
 ### Going from staging to production
-Once your pull request has been accepted, your changes will be in master and then will auto-propagate to mofostaging. Double check that everything looks right on Mofostaging.
+Once your pull request has been accepted, your changes will be in master and then will auto-propagate to mofostaging. Double check that everything looks right on Mofostaging. Mofostaging is the last stop before heading to production.
 
-The only way to go from staging to production is through a build on Jenkens. Currently, Dan, Ryan, and JP have access to build processes on Jenkens, so one of us will need to be alerted that we're ready to roll to production.
+The only way to go from staging to production is through a Jenkens build, which runs scripts to move the site into the S3 bucket that serves opennews.org. 
+
+Currently, Dan, Ryan, and JP have access to build processes on Jenkens, so one of us will need to be alerted that we're ready to roll to production.
+
+Once the Jenkins build has run (takes about 5 minutes, max), the site will be updated and your post should be live.
 
