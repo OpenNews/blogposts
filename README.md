@@ -4,7 +4,7 @@ Writing blog posts on OpenNews is easy but requires knowing a few things about f
 
 ## Creating a file
 
-Blog posts are written in Markdown and need to be stored in the `_Posts` folder. In order for Jekyll to know what to do with them, files most follow this naming convention: `YEAR-MONTH-DAY-FILE-NAME.md`. For an example from our actual blog, theres: `2014-10-22-announcing-2015-fellows.md`
+Blog posts need to be stored in the `_Posts` folder. In order for Jekyll to know what to do with them, files most follow this naming convention: `YEAR-MONTH-DAY-FILE-NAME.md`. For an example from our actual blog, theres: `2014-10-22-announcing-2015-fellows.md`
 
 Jekyll uses this file name to assign chronological order to the blog post, so it's important. The title itself doesn't matter a ton, but I find it's easier to just keep going with the hyphens. NO SPACES though--that won't work.
 
@@ -35,4 +35,15 @@ excerpt: The OpenNews team brings our 2015 Knight-Mozilla Fellows to Los Angeles
 
 Also, note that this whole thing needs to be both preceeded and followed by three hyphens.
 
+## Writing
+
+Blog posts are written in [Markdown](https://daringfireball.net/projects/markdown/basics), and linked there is the basic markdown syntax. The [Jekyll documentation](http://jekyllrb.com/docs/posts/) also goes in to quite a bit of detail about writing posts and has some useful advice, especially for hightlighting code snippets. 
+
+If you want to include images in your posts you have a a couple workable options:
+* store your images inside the `/media/img/` and link accordingly.
+* store your images on a third-party service like dropbox and link accordingly.
+
+There's no real reason **not** to put images into `/media/img/` unless you really don't want to deal with `git add --all` and committing. But you're going to be doing that anyway, so really, nbd.
+
 ## Publishing
+
